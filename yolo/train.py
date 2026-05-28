@@ -5,7 +5,7 @@ from ultralytics import YOLO
 # using pip install albumentations
 
 def main():
-    model = YOLO("yolov5n.pt", task="detect")
+    model = YOLO("yolov8n.pt", task="detect")
     model.train(
         data='yolo/data.yaml',
         device=0,
@@ -16,7 +16,7 @@ def main():
         optimizer='AdamW',
         patience=10,
         project=os.getcwd(), 
-        name='yolov5n_br_flip_blur_results', # Change this to the desired output name
+        name='yolov8n_br_flip_blur_results', # Change this to the desired output name
         exist_ok=False, # Overwrites/does not the folder if you run it multiple times
 
         # DATA AUGMENTATION PIPELINE
