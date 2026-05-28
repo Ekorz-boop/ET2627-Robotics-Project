@@ -1,0 +1,8 @@
+train: ../rob_img/data/images/train
+val: ../rob_img/data/images/val
+
+nc: 5
+
+scale: n
+
+names: ["box", "orange", "green", "blue", "black"]
